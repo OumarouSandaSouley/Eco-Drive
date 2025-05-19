@@ -7,11 +7,7 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "credentialsSource": "local",
-      "git": {
-        "remote": "origin",
-        "branch": "main"
-      }
+      "credentialsSource": "local"
     },
     "preview": {
       "distribution": "internal"
