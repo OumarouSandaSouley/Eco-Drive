@@ -1,21 +1,21 @@
-import { useState, useRef } from "react"
+import { useRouter } from "expo-router"
+import { StatusBar } from "expo-status-bar"
+import { useRef, useState } from "react"
 import {
-  StyleSheet,
-  View,
-  Text,
-  TouchableOpacity,
+  Alert,
+  Keyboard,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
-  Alert,
-  Keyboard,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
   TouchableWithoutFeedback,
+  View,
 } from "react-native"
-import { useRouter } from "expo-router"
-import { StatusBar } from "expo-status-bar"
-import { useAuth } from "../../hooks/useAuth"
-import Input from "../../components/ui/Input"
 import Button from "../../components/ui/Button"
+import Input from "../../components/ui/Input"
+import { useAuth } from "../../hooks/useAuth"
 import { colors } from "../../styles/colors"
 
 export default function LoginScreen() {
@@ -86,7 +86,7 @@ export default function LoginScreen() {
         <ScrollView contentContainerStyle={styles.scrollContent}>
           <View style={styles.logoContainer}>
             <Text style={styles.logoText}>ÉcoDrive</Text>
-            <Text style={styles.tagline}>Votre assistant de maintenance automobile</Text>
+            <Text style={styles.tagline}>Votre assistant de maintenance automobile !</Text>
           </View>
 
           <View style={styles.formContainer}>
